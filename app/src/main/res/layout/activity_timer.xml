@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark_grey"
     android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".MainActivity"
+    tools:context=".TimerActivity"
     tools:deviceIds="wear">
 
     <LinearLayout
@@ -14,25 +14,19 @@
         android:layout_height="match_parent"
         android:padding="@dimen/inner_frame_layout_padding"
         android:orientation="vertical"
-        app:boxedEdges="all"
-      >
+        app:boxedEdges="all">
 
-     <EditText
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:id="@+id/etFirst"
-         android:hint="Some text"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="15sp"
+          android:id="@+id/tvSecond"
+          android:text="Seconds remaining : 0"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnShow"
-            android:text="Click"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvOutput"/>
-
+            android:id="@+id/btnSend"
+            android:text="Send"/>
     </LinearLayout>
 </androidx.wear.widget.BoxInsetLayout>
